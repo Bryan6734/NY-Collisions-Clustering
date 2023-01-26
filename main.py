@@ -23,7 +23,7 @@ def draw_Google_Maps():
     gmap3.scatter(latitudes, longitudes, '#FF0000', size=40, marker=False)
     gmap3.heatmap(latitudes, longitudes, opacity=0.2)
     # download to computer
-    gmap3.draw("/Users/bryansukidi/Desktop/ny_accidents.html")
+    gmap3.draw("ny_accidents.html")
 
 
 def graph_scatterplot():
@@ -33,6 +33,6 @@ def graph_scatterplot():
     plt.ylabel("Longitude")
     plt.show()
 
-graph_scatterplot()
+draw_Google_Maps()
 
 print("Code Completed")
